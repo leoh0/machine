@@ -168,7 +168,7 @@ func (b *b2dReleaseGetter) getReleaseURL(apiURL string) (string, error) {
 		return apiURL, nil
 	}
 
-	scheme, host, org, repo := matches[1], matches[2], matches[4], matches[5]
+	_, host, org, repo := matches[1], matches[2], matches[4], matches[5]
 	if host == "api.github.com" {
 		host = "github.com"
 	}
@@ -187,7 +187,7 @@ See here for more details: %s
 Consider specifying another storage driver (e.g. 'overlay') using '--engine-storage-driver' instead.
 `, tag, bugURL)
 	}
-	url := fmt.Sprintf("%s://%s/%s/%s/releases/download/%s/%s", scheme, host, org, repo, tag, b.isoFilename)
+	url := fmt.Sprintf("https://storage.googleapis.com/minikube/iso/minikube-%s.iso", tag)
 	return url, nil
 }
 
@@ -422,10 +422,9 @@ func (b *B2dUtils) UpdateISOCache(isoURL string) error {
 		// Non-default B2D are not cached
 		return nil
 	}
-	log.Info("----------------------------------------------")
 	if !exists {
 		log.Info("No default Boot2Docker ISO found locally, downloading the latest release...")
-		return b.DownloadLatestBoot2Docker("")
+		return b.DownloadLatestBoot2Docker("https://api.github.com/repos/kubernetes/minikube/releases")
 	}
 
 	// latest := b.isLatest()
