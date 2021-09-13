@@ -1,6 +1,6 @@
 package crashreport
 
-import "github.com/docker/machine/libmachine/log"
+import "github.com/leoh0/machine/libmachine/log"
 
 type logger struct{}
 

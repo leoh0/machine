@@ -3,7 +3,7 @@ package thirdparty
 import (
 	"testing"
 
-	"github.com/docker/machine/its"
+	"github.com/leoh0/machine/its"
 )
 
 func TestThirdPartyCompatibility(t *testing.T) {

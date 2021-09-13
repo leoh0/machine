@@ -11,12 +11,12 @@ import (
 	"time"
 
 	"github.com/digitalocean/godo"
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/mcnflag"
-	"github.com/docker/machine/libmachine/mcnutils"
-	"github.com/docker/machine/libmachine/ssh"
-	"github.com/docker/machine/libmachine/state"
+	"github.com/leoh0/machine/libmachine/drivers"
+	"github.com/leoh0/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/mcnflag"
+	"github.com/leoh0/machine/libmachine/mcnutils"
+	"github.com/leoh0/machine/libmachine/ssh"
+	"github.com/leoh0/machine/libmachine/state"
 	"golang.org/x/oauth2"
 )
 

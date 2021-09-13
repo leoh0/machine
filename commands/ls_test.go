@@ -8,12 +8,12 @@ import (
 
 	"errors"
 
-	"github.com/docker/machine/drivers/fakedriver"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/mcndockerclient"
-	"github.com/docker/machine/libmachine/state"
-	"github.com/docker/machine/libmachine/swarm"
+	"github.com/leoh0/machine/drivers/fakedriver"
+	"github.com/leoh0/machine/libmachine/engine"
+	"github.com/leoh0/machine/libmachine/host"
+	"github.com/leoh0/machine/libmachine/mcndockerclient"
+	"github.com/leoh0/machine/libmachine/state"
+	"github.com/leoh0/machine/libmachine/swarm"
 	"github.com/stretchr/testify/assert"
 )
 

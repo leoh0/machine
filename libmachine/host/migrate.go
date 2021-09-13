@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/docker/machine/drivers/none"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/version"
+	"github.com/leoh0/machine/drivers/none"
+	"github.com/leoh0/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/version"
 )
 
 var (

@@ -34,19 +34,14 @@ _docker_machine_machines() {
 _docker_machine_drivers() {
     local drivers=(
         amazonec2
-        azure
         digitalocean
-        exoscale
         generic
         google
         hyperv
-        openstack
-        rackspace
         softlayer
         virtualbox
         vmwarefusion
         vmwarevcloudair
-        vmwarevsphere
     )
     echo "${drivers[@]}"
 }

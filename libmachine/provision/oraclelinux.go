@@ -1,7 +1,7 @@
 package provision
 
 import (
-	"github.com/docker/machine/libmachine/drivers"
+	"github.com/leoh0/machine/libmachine/drivers"
 )
 
 func init() {

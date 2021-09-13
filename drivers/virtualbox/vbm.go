@@ -13,7 +13,7 @@ import (
 
 	"time"
 
-	"github.com/docker/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/log"
 )
 
 const (

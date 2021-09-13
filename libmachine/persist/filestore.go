@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/mcnerror"
+	"github.com/leoh0/machine/libmachine/host"
+	"github.com/leoh0/machine/libmachine/mcnerror"
 )
 
 type Filestore struct {

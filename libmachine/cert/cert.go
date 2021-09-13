@@ -15,8 +15,8 @@ import (
 
 	"errors"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/auth"
+	"github.com/leoh0/machine/libmachine/log"
 )
 
 var defaultGenerator = NewX509CertGenerator()

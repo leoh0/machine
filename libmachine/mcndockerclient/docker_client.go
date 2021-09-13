@@ -3,8 +3,8 @@ package mcndockerclient
 import (
 	"fmt"
 
-	"github.com/docker/machine/libmachine/cert"
-	"github.com/samalba/dockerclient"
+	"github.com/leoh0/dockerclient"
+	"github.com/leoh0/machine/libmachine/cert"
 )
 
 // DockerClient creates a docker client for a given host.

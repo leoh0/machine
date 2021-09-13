@@ -16,8 +16,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/version"
+	"github.com/leoh0/machine/libmachine/log"
+	"github.com/leoh0/machine/version"
 )
 
 const (
@@ -422,17 +422,17 @@ func (b *B2dUtils) UpdateISOCache(isoURL string) error {
 		// Non-default B2D are not cached
 		return nil
 	}
-
+	log.Info("----------------------------------------------")
 	if !exists {
 		log.Info("No default Boot2Docker ISO found locally, downloading the latest release...")
 		return b.DownloadLatestBoot2Docker("")
 	}
 
-	latest := b.isLatest()
-	if !latest {
-		log.Info("Default Boot2Docker ISO is out-of-date, downloading the latest release...")
-		return b.DownloadLatestBoot2Docker("")
-	}
+	// latest := b.isLatest()
+	// if !latest {
+	// 	log.Info("Default Boot2Docker ISO is out-of-date, downloading the latest release...")
+	// 	return b.DownloadLatestBoot2Docker("")
+	// }
 
 	return nil
 }

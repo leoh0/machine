@@ -8,11 +8,11 @@ import (
 	"os"
 	"time"
 
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/drivers/plugin/localbinary"
-	"github.com/docker/machine/libmachine/drivers/rpc"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/version"
+	"github.com/leoh0/machine/libmachine/drivers"
+	"github.com/leoh0/machine/libmachine/drivers/plugin/localbinary"
+	"github.com/leoh0/machine/libmachine/drivers/rpcdriver"
+	"github.com/leoh0/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/version"
 )
 
 var (

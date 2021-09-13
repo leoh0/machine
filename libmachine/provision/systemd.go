@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"text/template"
 
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/provision/serviceaction"
-	"github.com/docker/machine/libmachine/versioncmp"
+	"github.com/leoh0/machine/libmachine/drivers"
+	"github.com/leoh0/machine/libmachine/provision/serviceaction"
+	"github.com/leoh0/machine/libmachine/versioncmp"
 )
 
 type SystemdProvisioner struct {

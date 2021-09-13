@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/mcnutils"
+	"github.com/leoh0/machine/libmachine/auth"
+	"github.com/leoh0/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/mcnutils"
 )
 
 func createCACert(authOptions *auth.Options, caOrg string, bits int) error {

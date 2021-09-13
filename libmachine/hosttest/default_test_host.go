@@ -1,12 +1,12 @@
 package hosttest
 
 import (
-	"github.com/docker/machine/drivers/none"
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/swarm"
-	"github.com/docker/machine/libmachine/version"
+	"github.com/leoh0/machine/drivers/none"
+	"github.com/leoh0/machine/libmachine/auth"
+	"github.com/leoh0/machine/libmachine/engine"
+	"github.com/leoh0/machine/libmachine/host"
+	"github.com/leoh0/machine/libmachine/swarm"
+	"github.com/leoh0/machine/libmachine/version"
 )
 
 const (

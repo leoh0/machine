@@ -174,7 +174,7 @@ __docker-machine_subcommand() {
         "$opts_help"
         "*:host:__docker-machine_hosts_all"
     )
-    opts_driver=('amazonec2' 'azure' 'digitalocean' 'exoscale' 'generic' 'google' 'hyperv' 'none' 'openstack' 'rackspace' 'softlayer' 'virtualbox' 'vmwarefusion' 'vmwarevcloudair' 'vmwarevsphere')
+    opts_driver=('amazonec2' 'digitalocean' 'generic' 'google' 'hyperv' 'none' 'softlayer' 'virtualbox' 'vmwarefusion' 'vmwarevcloudair')
     opts_storage_driver=('overlay' 'aufs' 'btrfs' 'devicemapper' 'vfs' 'zfs')
     integer ret=1
 

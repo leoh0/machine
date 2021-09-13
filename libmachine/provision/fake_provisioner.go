@@ -1,12 +1,12 @@
 package provision
 
 import (
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/provision/pkgaction"
-	"github.com/docker/machine/libmachine/provision/serviceaction"
-	"github.com/docker/machine/libmachine/swarm"
+	"github.com/leoh0/machine/libmachine/auth"
+	"github.com/leoh0/machine/libmachine/drivers"
+	"github.com/leoh0/machine/libmachine/engine"
+	"github.com/leoh0/machine/libmachine/provision/pkgaction"
+	"github.com/leoh0/machine/libmachine/provision/serviceaction"
+	"github.com/leoh0/machine/libmachine/swarm"
 )
 
 type FakeDetector struct {

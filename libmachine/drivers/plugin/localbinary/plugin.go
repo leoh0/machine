@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/log"
 )
 
 var (
@@ -17,10 +17,10 @@ var (
 	// plugin server.
 	defaultTimeout               = 10 * time.Second
 	CurrentBinaryIsDockerMachine = false
-	CoreDrivers                  = []string{"amazonec2", "azure", "digitalocean",
-		"exoscale", "generic", "google", "hyperv", "none", "openstack",
-		"rackspace", "softlayer", "virtualbox", "vmwarefusion",
-		"vmwarevcloudair", "vmwarevsphere"}
+	CoreDrivers                  = []string{"amazonec2", "digitalocean",
+		"generic", "google", "hyperv", "none", "openstack",
+		"softlayer", "virtualbox", "vmwarefusion",
+		"vmwarevcloudair"}
 )
 
 const (

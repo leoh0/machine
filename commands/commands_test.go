@@ -5,17 +5,17 @@ import (
 	"flag"
 	"testing"
 
-	"github.com/codegangsta/cli"
-	"github.com/docker/machine/commands/commandstest"
-	"github.com/docker/machine/drivers/fakedriver"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/crashreport"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/hosttest"
-	"github.com/docker/machine/libmachine/mcnerror"
-	"github.com/docker/machine/libmachine/provision"
-	"github.com/docker/machine/libmachine/state"
+	"github.com/leoh0/machine/commands/commandstest"
+	"github.com/leoh0/machine/drivers/fakedriver"
+	"github.com/leoh0/machine/libmachine"
+	"github.com/leoh0/machine/libmachine/crashreport"
+	"github.com/leoh0/machine/libmachine/host"
+	"github.com/leoh0/machine/libmachine/hosttest"
+	"github.com/leoh0/machine/libmachine/mcnerror"
+	"github.com/leoh0/machine/libmachine/provision"
+	"github.com/leoh0/machine/libmachine/state"
 	"github.com/stretchr/testify/assert"
+	"github.com/urfave/cli"
 )
 
 func TestRunActionForeachMachine(t *testing.T) {

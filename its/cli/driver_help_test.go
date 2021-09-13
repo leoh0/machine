@@ -3,7 +3,7 @@ package cli
 import (
 	"testing"
 
-	"github.com/docker/machine/its"
+	"github.com/leoh0/machine/its"
 )
 
 func TestDriverHelp(t *testing.T) {

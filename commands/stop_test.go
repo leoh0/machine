@@ -3,12 +3,12 @@ package commands
 import (
 	"testing"
 
-	"github.com/docker/machine/commands/commandstest"
-	"github.com/docker/machine/drivers/fakedriver"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/libmachinetest"
-	"github.com/docker/machine/libmachine/state"
+	"github.com/leoh0/machine/commands/commandstest"
+	"github.com/leoh0/machine/drivers/fakedriver"
+	"github.com/leoh0/machine/libmachine"
+	"github.com/leoh0/machine/libmachine/host"
+	"github.com/leoh0/machine/libmachine/libmachinetest"
+	"github.com/leoh0/machine/libmachine/state"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -6,16 +6,16 @@ import (
 	"os"
 	"strings"
 
-	"github.com/codegangsta/cli"
-	"github.com/docker/machine/commands/mcndirs"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/crashreport"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/mcnerror"
-	"github.com/docker/machine/libmachine/mcnutils"
-	"github.com/docker/machine/libmachine/persist"
-	"github.com/docker/machine/libmachine/ssh"
+	"github.com/leoh0/machine/commands/mcndirs"
+	"github.com/leoh0/machine/libmachine"
+	"github.com/leoh0/machine/libmachine/crashreport"
+	"github.com/leoh0/machine/libmachine/host"
+	"github.com/leoh0/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/mcnerror"
+	"github.com/leoh0/machine/libmachine/mcnutils"
+	"github.com/leoh0/machine/libmachine/persist"
+	"github.com/leoh0/machine/libmachine/ssh"
+	"github.com/urfave/cli"
 )
 
 const (

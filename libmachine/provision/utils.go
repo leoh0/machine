@@ -11,12 +11,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/cert"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/mcnutils"
-	"github.com/docker/machine/libmachine/provision/serviceaction"
+	"github.com/leoh0/machine/libmachine/auth"
+	"github.com/leoh0/machine/libmachine/cert"
+	"github.com/leoh0/machine/libmachine/engine"
+	"github.com/leoh0/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/mcnutils"
+	"github.com/leoh0/machine/libmachine/provision/serviceaction"
 )
 
 type DockerOptions struct {
@@ -114,13 +114,13 @@ func ConfigureAuth(p Provisioner) error {
 		return fmt.Errorf("error generating server cert: %s", err)
 	}
 
-	if err := p.Service("docker", serviceaction.Stop); err != nil {
-		return err
-	}
+	// if err := p.Service("docker", serviceaction.Stop); err != nil {
+	// 	return err
+	// }
 
-	if _, err := p.SSHCommand(`if [ ! -z "$(ip link show docker0)" ]; then sudo ip link delete docker0; fi`); err != nil {
-		return err
-	}
+	// if _, err := p.SSHCommand(`if [ ! -z "$(ip link show docker0)" ]; then sudo ip link delete docker0; fi`); err != nil {
+	// 	return err
+	// }
 
 	// upload certs and configure TLS auth
 	caCert, err := ioutil.ReadFile(authOptions.CaCertPath)

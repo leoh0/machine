@@ -14,19 +14,19 @@ import (
 
 	"time"
 
-	"github.com/codegangsta/cli"
-	"github.com/docker/machine/commands/mcndirs"
-	"github.com/docker/machine/libmachine"
-	"github.com/docker/machine/libmachine/auth"
-	"github.com/docker/machine/libmachine/crashreport"
-	"github.com/docker/machine/libmachine/drivers"
-	"github.com/docker/machine/libmachine/drivers/rpc"
-	"github.com/docker/machine/libmachine/engine"
-	"github.com/docker/machine/libmachine/host"
-	"github.com/docker/machine/libmachine/log"
-	"github.com/docker/machine/libmachine/mcnerror"
-	"github.com/docker/machine/libmachine/mcnflag"
-	"github.com/docker/machine/libmachine/swarm"
+	"github.com/leoh0/machine/commands/mcndirs"
+	"github.com/leoh0/machine/libmachine"
+	"github.com/leoh0/machine/libmachine/auth"
+	"github.com/leoh0/machine/libmachine/crashreport"
+	"github.com/leoh0/machine/libmachine/drivers"
+	"github.com/leoh0/machine/libmachine/drivers/rpcdriver"
+	"github.com/leoh0/machine/libmachine/engine"
+	"github.com/leoh0/machine/libmachine/host"
+	"github.com/leoh0/machine/libmachine/log"
+	"github.com/leoh0/machine/libmachine/mcnerror"
+	"github.com/leoh0/machine/libmachine/mcnflag"
+	"github.com/leoh0/machine/libmachine/swarm"
+	"github.com/urfave/cli"
 )
 
 var (
@@ -218,12 +218,12 @@ func cmdCreateInner(c CommandLine, api libmachine.API) error {
 	// driverOpts is the actual data we send over the wire to set the
 	// driver parameters (an interface fulfilling drivers.DriverOptions,
 	// concrete type rpcdriver.RpcFlags).
-	mcnFlags := h.Driver.GetCreateFlags()
-	driverOpts := getDriverOpts(c, mcnFlags)
+	// mcnFlags := h.Driver.GetCreateFlags()
+	// driverOpts := getDriverOpts(c, mcnFlags)
 
-	if err := h.Driver.SetConfigFromFlags(driverOpts); err != nil {
-		return fmt.Errorf("Error setting machine configuration from flags provided: %s", err)
-	}
+	// if err := h.Driver.SetConfigFromFlags(driverOpts); err != nil {
+	// 	return fmt.Errorf("Error setting machine configuration from flags provided: %s", err)
+	// }
 
 	if err := api.Create(h); err != nil {
 		// Wait for all the logs to reach the client
