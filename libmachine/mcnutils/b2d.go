@@ -192,7 +192,7 @@ Consider specifying another storage driver (e.g. 'overlay') using '--engine-stor
 }
 
 func (*b2dReleaseGetter) download(dir, file, isoURL string) error {
-	u, err := url.Parse(isoURL)
+	u, _ := url.Parse(isoURL)
 
 	var src io.ReadCloser
 	if u.Scheme == "file" || u.Scheme == "" {
